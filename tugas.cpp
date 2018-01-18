@@ -36,8 +36,21 @@ void Output (void)
         cout << "Warna sisik ular     	: " << warnasisikular << endl;
         cout << "Jenis ular      	: " << jenisular << endl;
         cout << "panjang ular      	: " << panjangular << " Meter" << endl;
-        cout << "panjang taring  		: " << panjangtaring << " CM" <<endl;
+        cout << "panjang taring  	: " << panjangtaring << " CM" <<endl;
         cout << endl;
     };
 };
+
+int main()
+    { 
+	Speciesular ularA("ular sumur","Oxyuranus microlepidotus", "benua australia", 
+	"hitam biru","cobra", 2, 5);
+	
+Speciesular ularB("ular tanah","Pseudonaja textilis", "benua eropa", 
+	"coklat","berderik", 1.7, 4);
+
+    ularA.Output();
+    ularB.Output();
+    return 0;
+}
 
